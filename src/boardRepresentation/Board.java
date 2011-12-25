@@ -13,6 +13,7 @@ public class Board {
 	{
 		whitePieces = new ArrayList<Piece>();
 		blackPieces = new ArrayList<Piece>();
+		initializeBoard();
 	}
 	
 	/**
