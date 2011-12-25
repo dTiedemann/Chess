@@ -35,19 +35,11 @@ public class Location {
 	}
 	
 	/**
-	 * sets the x coordinate
+	 * sets the location
 	 */
-	public void setX(int newX)
+	public void setLocation(int newX, int newY)
 	{
 		x = newX;
-	}
-	
-	/**
-	 * sets the y coordinate
-	 * @param newY
-	 */
-	public void setY(int newY)
-	{
 		y = newY;
 	}
 	
@@ -59,5 +51,14 @@ public class Location {
 	public boolean equals(Location l1)
 	{
 		return (l1.getX() == x) && (l1.getY() == y);
+	}
+	
+	/**
+	 * determines whether or not a location is valid
+	 * @return
+	 */
+	public boolean isValid()
+	{
+		return x>=0 && x<8 && y>=0 && y<8;
 	}
 }
